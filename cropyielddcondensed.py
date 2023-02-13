@@ -1,3 +1,4 @@
+#Function launch_fe is acquired data from AWS
 def launch_fe(data):
     import os
     import pandas as pd
@@ -68,6 +69,7 @@ def launch_fe(data):
     train.to_csv('train.csv', index=False, header=False)
     test.to_csv('test.csv', index=False, header=False)
     column_names = list(train.columns)
+#End of acquired code
 def get_model_id():
     return "82dd8b85-4f62-44d9-aaee-298a9a592a80"
 
