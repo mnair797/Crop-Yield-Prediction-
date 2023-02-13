@@ -14,6 +14,9 @@ data2 = BytesIO(uploaded_file[filename])
 from google.colab import drive
 drive.mount('/content/drive')
 
+#Function launch_fe is acquired code from AWS
+
+
 def launch_fe(data):
     import os
     import pandas as pd
@@ -58,7 +61,8 @@ def launch_fe(data):
    
     # Write train and test csv
     dataset.to_csv('train.csv', index=False, header=False)
-    
+  
+
 def get_model_id():
     return "2580c17a-b492-407e-b563-487accabb580"
 
@@ -107,6 +111,8 @@ def launch_fe2(data):
     dataset.to_csv('test.csv', index=False, header=False)
 def get_model_id():
     return "2580c17a-b492-407e-b563-487accabb580"
+
+#End of acquired data 
 
 # Launch FE
 launch_fe(data)
