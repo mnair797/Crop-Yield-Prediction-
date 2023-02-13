@@ -2,7 +2,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 
 
-#Function launch_fe is acquired data from AWS
+#Function launch_fe is acquired code from AWS
 def launch_fe(data):
     import os
     import pandas as pd
