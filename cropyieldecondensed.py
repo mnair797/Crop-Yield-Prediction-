@@ -2,7 +2,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 
 
-
+#Function launch_fe is acquired data from AWS
 def launch_fe(data):
     import os
     import pandas as pd
@@ -86,6 +86,8 @@ def launch_fe(data):
     train.to_csv('train.csv', index=False, header=False)
     test.to_csv('test.csv', index=False, header=False)
     column_names = list(train.columns)
+#End of acquired code
+
 def get_model_id():
     return "0483bef3-bb6d-4cdb-8912-a3dfeca9cd6d"
 
