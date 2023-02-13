@@ -14,7 +14,7 @@ data2 = BytesIO(uploaded_file[filename])
 from google.colab import drive
 drive.mount('/content/drive')
 
-#Function launch_fe is acquired data from AWS
+#Function launch_fe is acquired code from AWS
 
 def launch_fe(data):
     import os
@@ -81,7 +81,7 @@ def launch_fe2(data):
 
     # Write train and test csv
     dataset.to_csv('test.csv', index=False, header=False)
-#End of Acquired Data
+#End of acquired code
     
 def get_model_id():
     return "None"
